@@ -69,9 +69,9 @@ on:
   # 1. Check if the triggering actor meets authorization criteria,
   #    e.g., allow proceeding with workflow execution only if it was triggered by a member of the GitHub org.
   # 2. Use commit SHA in a comment that triggers workflow: instead of using `/ok-to-test` comment,
-  #   design the workflow to accept `/ok-to-test(<trusted_sha_commit>)`
-  #   and checkout code only from <trusted_sha_commit> submitted by an authorized actor.
-  #   This will help mitigate checkout of untrusted code and its execution.
+  #    design the workflow to accept `/ok-to-test(<trusted_sha_commit>)`
+  #    and checkout code only from <trusted_sha_commit> submitted by an authorized actor.
+  #    This will help mitigate checkout of untrusted code and its execution.
   #
   # Also, consider using label-based triggers instead.
   # With a pull_request trigger, the labeled event already includes the latest commit SHA for the pull request,
